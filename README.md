@@ -28,36 +28,47 @@ Built with **FastAPI**, **React.js**, **scikit-learn**, and **Tailwind CSS**.
 
 ---
 
+## 🌐 Live Demo
+
+- **Frontend:** https://phishguard-ai-six-nu.vercel.app
+- **Backend API:** https://phishguard-backend-jqdl.onrender.com/docs
+
+> Note: Backend is hosted on Render's free tier and may take ~50s to wake up on first request.
+
+---
+
 ## 🗂️ Project Structure
 
+```
 phishing-detector/
 ├── backend/
-│ ├── model/
-│ │ ├── train_model.py # ML training script
-│ │ └── phishing_model.pkl # Saved model (auto-generated)
-│ ├── utils/
-│ │ └── feature_extractor.py # Email feature engineering
-│ └── main.py # FastAPI server
+│   ├── model/
+│   │   ├── train_model.py        # ML training script
+│   │   └── phishing_model.pkl    # Saved model (auto-generated)
+│   ├── utils/
+│   │   └── feature_extractor.py  # Email feature engineering
+│   └── main.py                   # FastAPI server
 ├── frontend/
-│ ├── public/
-│ │ └── index.html
-│ └── src/
-│ ├── components/
-│ │ └── Navbar.jsx
-│ ├── pages/
-│ │ ├── AnalyzerPage.jsx
-│ │ ├── ResultPage.jsx
-│ │ └── HistoryPage.jsx
-│ ├── utils/
-│ │ └── api.js
-│ ├── App.jsx
-│ ├── index.js
-│ └── index.css
+│   ├── public/
+│   │   └── index.html
+│   └── src/
+│       ├── components/
+│       │   └── Navbar.jsx
+│       ├── pages/
+│       │   ├── AnalyzerPage.jsx
+│       │   ├── ResultPage.jsx
+│       │   └── HistoryPage.jsx
+│       ├── utils/
+│       │   └── api.js
+│       ├── App.jsx
+│       ├── index.js
+│       └── index.css
 ├── dataset/
-│ ├── generate_dataset.py
-│ └── phishing_dataset.csv # Auto-generated
+│   ├── generate_dataset.py
+│   └── phishing_dataset.csv     # Auto-generated
 ├── .gitignore
 └── README.md
+```
 
 ---
 
@@ -66,7 +77,7 @@ phishing-detector/
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/yourusername/phishing-detector.git
+git clone https://github.com/bhaveshkerkar/phishing-detector.git
 cd phishing-detector
 ```
 
@@ -117,4 +128,4 @@ http://localhost:3000
 
 **Bhavesh Kerkar**  
 BSc IT — PTVA's Sathaye College, Mumbai  
-[GitHub](https://github.com/bhaveshkerkar) · [LinkedIn](https://linkedin.com/in/bhaveshkerkar)
+[GitHub](https://github.com/bhaveshkerkar) · [LinkedIn](https://www.linkedin.com/in/bhavesh-kerkar-52587928a/)
