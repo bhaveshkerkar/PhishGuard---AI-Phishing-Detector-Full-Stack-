@@ -24,9 +24,15 @@ NUM_FEATURES = bundle["numeric_features"]
 # --- App setup ---
 app = FastAPI(title="Phishing Email Detector API", version="1.0.0")
 
+# --- CORS ---
+# Set allowed origins via env var (comma-separated). Falls back to "*" for local dev.
+origins_env = os.getenv("ALLOWED_ORIGINS", "*")
+origins = [o.strip() for o in origins_env.split(",")]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],   # allow React frontend on any port
+    allow_origins=origins,
+    allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )

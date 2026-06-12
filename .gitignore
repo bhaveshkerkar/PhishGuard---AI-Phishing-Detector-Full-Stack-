@@ -10,9 +10,6 @@ venv/
 dist/
 build/
 
-# Model file (large — regenerate with train_model.py)
-backend/model/phishing_model.pkl
-
 # Node
 frontend/node_modules/
 frontend/build/
